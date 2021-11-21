@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reproductor MP3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="botones">
+        <button class="play" id="play">&#9658;</button>
+        <button class="pause" id="pause">||</button>
+    </div>
+    <audio src="audio.mp3" id="mp3" preload="auto"></audio>
+    <script src="es6.js"></script>
+    <script src="functions.js"></script>
+    <script src="object.js"></script>
+    <script src="prototype.js"></script>
+    <script>
+        // Reproducir por es6.js
+        // const reproductorES6 = new Reproductor();
+        // reproductorES6.iniciar();
+
+        // Reproducir por functions
+        // start();
+
+        // Reproducir por objeto
+        // ReproductorObjeto.start();
+
+        // Reproducir por prototype
+        const reproducirPrototype = new ReproductorPrototype();
+        reproducirPrototype.start();
+    </script>
+</body>
+</html>

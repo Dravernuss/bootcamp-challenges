@@ -1,0 +1,21 @@
+.play{
+    background: linear-gradient(to right, #6c5ce7 , #990f52);
+	font-size: 60px;
+	width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
+
+}
+.pause{
+    background: linear-gradient(to right, #6c5ce7 , #990f52);
+	font-size: 60px;
+	width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
+    display: none;
+}
+

@@ -1,0 +1,141 @@
+.team {
+  margin-top: 5%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.team__details {
+  display: flex;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 15%;
+}
+.team__details .team__title {
+  flex: 1.5;
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-top: 0%;
+  text-align: left;
+}
+.team__details .team__description {
+  flex: 1;
+  text-align: left;
+}
+.team__details .team__description .team__subtitle {
+  font-family: "Poppins";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 27px;
+  margin-top: 0%;
+}
+.team__details .team__description .team__information {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 27px;
+}
+
+.team__crew {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  column-gap: 9.5%;
+  margin-bottom: 120px;
+}
+.team__crew .member__photo {
+  width: 200px;
+  height: auto;
+}
+.team__crew .member__role {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 15.9px;
+  text-transform: uppercase;
+  float: right;
+  writing-mode: vertical-lr;
+}
+.team__crew .member__name {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 27px;
+  margin-top: 0px;
+  text-align: left;
+}
+.team__crew .member_member--one,
+.team__crew .member_member--three,
+.team__crew .member_member--four,
+.team__crew .member_member--six {
+  max-width: 240px;
+  max-height: 350px;
+  margin-bottom: 50px;
+}
+.team__crew .member_member--two,
+.team__crew .member_member--five {
+  max-width: 240px;
+  max-height: 350px;
+  margin-bottom: -50px;
+}
+
+.team__footer {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.07px;
+  text-align: center;
+  color: darkgray;
+}
+
+@media (max-width: 1285px) {
+  .team__crew {
+    justify-content: space-around;
+  }
+  .team__crew .member_member--two,
+.team__crew .member_member--four,
+.team__crew .member_member--six {
+    max-width: 240px;
+    max-height: 350px;
+    margin-bottom: -50px;
+  }
+  .team__crew .member_member--five {
+    max-width: 240px;
+    max-height: 350px;
+    margin-bottom: 50px;
+  }
+  .team__crew .member__photo {
+    width: 200px;
+  }
+}
+@media (max-width: 880px) {
+  body {
+    min-width: 700px;
+  }
+
+  .team__details {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .team__details .team__information {
+    font-size: 0.875rem;
+  }
+
+  .team__crew {
+    column-gap: 0%;
+  }
+  .team__crew .member__name {
+    font-size: 0.875rem;
+  }
+  .team__crew .member__role {
+    font-size: 0.625rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

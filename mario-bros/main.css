@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.game__container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5a8df6;
+}
+
+.mariobros__floor {
+  height: 80px;
+  background-image: url("images/floorTexture.png");
+}
+
+.cloud {
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cloud--single {
+  min-width: 95px;
+  background-image: url(images/cloud1.png);
+}
+
+.cloud--double {
+  min-width: 240px;
+  background-image: url("images/cloud2.png");
+}
+
+.mario,
+.mushroom,
+.pipe,
+.bush,
+.hill {
+  position: absolute;
+  bottom: 50px;
+}
+
+.mario {
+  width: 50px;
+}
+
+.mushroom {
+  height: 38px;
+  left: 70%;
+}
+
+.block {
+  height: 40px;
+}
+
+.pipe {
+  right: 5%;
+  width: 90px;
+}
+
+.bush {
+  left: 20%;
+  width: 200px;
+}
+
+.hill {
+  left: 50%;
+  width: 170px;
+}
+
+.coins__image {
+  height: 22px;
+}
+
+/* Aqui va un flexbox */
+.mariobross__header {
+  font-family: "Press Start 2P", Arial;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Aqui va un flexbox */
+.cloud__container {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cloud:nth-child(1) {
+  align-self: flex-end;
+}
+.cloud:nth-child(2) {
+  align-self: center;
+}
+.cloud:nth-child(3) {
+  align-self: flex-start;
+}
+
+/* Aqui va un flexbox */
+.characters__container {
+  flex: 3;
+  flex-wrap: wrap;
+}
+
+/* Aqui va un flexbox */
+.coins__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 10px;
+}
+
+.blocks__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.mario {
+  animation: moveMario 5s linear infinite;
+  z-index: 10;
+}
+
+.mushroom {
+  animation: downMushroom 5s linear infinite;
+}
+
+@keyframes moveMario {
+  0% {
+    left: 0%;
+    bottom: 50px;
+  }
+  66% {
+    bottom: 50px;
+  }
+  70% {
+    bottom: 90px;
+  }
+  73% {
+    bottom: 70px;
+  }
+  76% {
+    bottom: 110px;
+  }
+  79% {
+    bottom: 70px;
+  }
+  81% {
+    bottom: 50px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes downMushroom {
+  0% {
+    left: 80%;
+    bottom: 50px;
+  }
+
+  70% {
+    bottom: 50px;
+  }
+
+  73% {
+    bottom: -50px;
+  }
+
+  83% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: -100px;
+  }
+}

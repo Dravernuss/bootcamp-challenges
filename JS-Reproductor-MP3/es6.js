@@ -16,7 +16,7 @@ class Reproductor{
         nombreAudio.pause();
         console.log(`Se detuvo la cancion`)
         botonPlay.style.display="block"
-         botonPause.style.display="none"
+        botonPause.style.display="none"
      }); 
 
     };

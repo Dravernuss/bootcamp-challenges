@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Lato-Ligth";
+  src: url("fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+figure,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+h2 {
+  font-family: "Lato-Bold";
+}
+
+body {
+  color: rgba(71, 82, 94, 1);
+}
+
+.navBar {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: fixed;
+}
+
+.navBar_links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  background-color: #fff;
+}
+
+.navBar_links li {
+  font-family: "Lato-Regular";
+  padding: 10px;
+}
+
+.navBar_links-lupa {
+  width: 15px;
+}
+
+.container1,
+.container2,
+.container3 {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato-Ligth";
+}
+
+header {
+  flex-direction: column;
+  align-items: center;
+}
+
+header section,
+header nav {
+  width: 100%;
+  padding: 15px;
+}
+
+header section {
+  background: rgb(218, 218, 218);
+}
+header section .container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+header section article {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+header section article figure {
+  margin: 0;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+header section article figure img {
+  width: auto;
+  height: 200px;
+}
+
+header section article figure figcaption {
+  text-align: center;
+  background: #fff;
+  padding: 15px 15px 35px 20px;
+  position: absolute;
+  bottom: 30px;
+  border: solid 1px #ccc;
+}
+
+header section article figure figcaption span {
+  border-bottom: solid 2px rgba(71, 82, 94, 1);
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+main {
+  width: 100%;
+  padding: 40px 0;
+}
+
+main .container2 {
+  display: flex;
+  align-items: stretch;
+}
+
+main section {
+  width: 60%;
+  display: flex;
+  align-self: stretch;
+}
+
+main section article {
+  background: rgb(218, 218, 218);
+  padding: 20px 70px;
+  text-align: center;
+  font-size: 15px;
+}
+main section article h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+main p {
+  text-align: left;
+  font-size: 15px;
+}
+
+main section article img {
+  width: 70%;
+}
+main aside {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main aside > div {
+  width: 150px;
+}
+
+main aside img {
+  width: 100px;
+}
+main aside h2 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: solid 2px rgba(71, 82, 94, 1);
+  font-size: 18px;
+}
+main aside input,
+main aside textarea {
+  border: solid 1px rgba(71, 82, 94, 1);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 5px;
+  width: 80%;
+}
+main aside input[type*="sub"] {
+  background: rgba(71, 82, 94, 1);
+  color: #fff;
+}
+main aside input[type*="sub"]:hover {
+  background: #333;
+  color: #fff;
+}
+
+footer {
+  background: rgba(71, 82, 94, 1);
+  text-align: center;
+  color: #fff;
+  padding: 60px 0;
+  width: 100%;
+  font-weight: bold;
+}
+@media (max-width: 749px) {
+  header section article figure img {
+    height: 140px;
+  }
+}
+@media (max-width: 630px) {
+  header nav ul li a {
+    font-size: 13px;
+    padding: 5px;
+  }
+  header section article figure img {
+    height: 100px;
+  }
+
+  main .container2 {
+    flex-direction: column;
+  }
+  main section,
+  main aside {
+    width: inherit;
+  }
+  main section article {
+    padding: 20px;
+  }
+  .container1,
+  .container2,
+  .container3 {
+    max-width: 90%;
+  }
+  header nav .container1 {
+    justify-content: center;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+  header section article figure figcaption {
+    padding: 5px 5px 15px 10px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px;
+  }
+  footer span {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  header section article figure figcaption {
+    padding: 5px 5px 20px 10px;
+    bottom: 20px;
+  }
+}

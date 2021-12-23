@@ -1,0 +1,58 @@
+.color__selector {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.colorBox {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.colorBox--red {
+  background-color: #ff0000;
+  border: 1px solid black;
+}
+
+.colorBox--red:hover {
+  border: 1px solid yellow;
+}
+
+.colorBox--orange {
+  background-color: #ff7300;
+  border: 1px solid black;
+}
+
+.colorBox--orange:hover {
+  border: 1px solid yellow;
+}
+
+.colorBox--skyblue {
+  background-color: #00d9ff;
+  border: 1px solid black;
+}
+
+.colorBox--skyblue:hover {
+  border: 1px solid yellow;
+}
+
+.colorBox--purple {
+  background-color: #7700ff;
+  border: 1px solid black;
+}
+
+.colorBox--purple:hover {
+  border: 1px solid yellow;
+}
+
+.colorBox--original {
+  background-color: #195252;
+  border: 1px solid black;
+}
+
+.colorBox--original:hover {
+  border: 1px solid yellow;
+}

@@ -1,0 +1,19 @@
+.gifGenerator {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.gifGenerator__search {
+  display: flex;
+  justify-content: center;
+}
+
+.gifs {
+  margin: 20px 0;
+  background-color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

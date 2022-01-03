@@ -1,0 +1,14 @@
+.nav__link {
+  margin: 0 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background-color: beige;
+  line-height: 100px;
+}

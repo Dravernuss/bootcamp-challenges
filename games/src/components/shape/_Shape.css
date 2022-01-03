@@ -1,7 +1,6 @@
 .shape {
   margin: 20px;
   border: 2px solid #000;
-  background-color: aquamarine;
   cursor: pointer;
 }
 
@@ -11,8 +10,8 @@
 }
 
 .square {
-  width: 200px;
-  height: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 .circle {
@@ -24,5 +23,5 @@
 .parallelogram {
   width: 150px;
   height: 100px;
-  transform: skew(20deg);
+  transform: skew(15deg);
 }

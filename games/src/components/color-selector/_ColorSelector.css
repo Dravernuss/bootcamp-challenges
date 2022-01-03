@@ -1,0 +1,30 @@
+.color__selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorBox {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.colorBox--red {
+  background-color: #ff0000;
+}
+
+.colorBox--pink {
+  background-color: #ff00ff;
+}
+
+.colorBox--green {
+  background-color: #00ff72;
+}
+
+.colorBox--purple {
+  background-color: #7700ff;
+}

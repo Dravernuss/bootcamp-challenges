@@ -1,21 +1,12 @@
-import { Link } from "react-router-dom";
+import './_Home.css';
 
-
-const Home =()=>{
-    return(
-        <div className="buttons">
-            <Link to={`/app`}>
-                <p>Entrar a App</p>
-              </Link>
-              <Link to={`/gifgenerator`}>
-            <p>Entrar a GifGenerator</p>
-          </Link>
-          <Link to={`/paint`}>
-            <p>Entrar a Paint</p>
-          </Link>
-        </div>
-
-    )
+const Home = () => {
+  return (
+    <div className='home'>
+      <p>Home</p>
+      <p>Serie de ejercicios con React</p>
+    </div>
+  );
 };
 
 export default Home;

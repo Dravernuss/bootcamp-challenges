@@ -1,3 +1,18 @@
+# Games
+Developed with React and using React-Router.
+* Home:
+![image](https://user-images.githubusercontent.com/85135244/147968402-463a1209-d598-4d2e-82e9-c652cb9818df.png)
+
+* Emoji:
+![image](https://user-images.githubusercontent.com/85135244/147968465-7407422d-22e2-486a-8338-a2cb92ba28e3.png)
+
+* Gif:
+![image](https://user-images.githubusercontent.com/85135244/147968518-a03f51a5-db98-4c82-bf1b-01f60ded8d17.png)
+
+* Paint:
+ ![image](https://user-images.githubusercontent.com/85135244/147968545-24880865-1fd4-4112-a588-18833ea6b624.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,4 +1,5 @@
 # CSS magazine cover
 
-Develop with HTML and CSS
+<strong>Developed with HTML and CSS</strong> 
+<br>
 <img src='/CSS-magazine-cover/VistaPreviaCSSMagazineCover.JPG'>

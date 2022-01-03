@@ -1,3 +1,10 @@
+# pokedex-react
+<strong>Developed with React and Sass using Hooks and BrowserRouter</strong>
+![image](https://user-images.githubusercontent.com/85135244/147972464-bc6cd8e1-666c-4d8d-aeac-554582a4504b.png)
+
+![image](https://user-images.githubusercontent.com/85135244/147972477-94230922-d2ea-4158-a493-3937ea8a4a2d.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

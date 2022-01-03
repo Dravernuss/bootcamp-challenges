@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# Assigment 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed by Esteban Rodas.
 
-## Available Scripts
+Topics covered are: Scrum, Git, HTML and CSS, JavaScript, and React.
 
-In the project directory, you can run:
+## Color Selector
+![image](https://user-images.githubusercontent.com/85135244/147958101-7ce30723-376e-4049-a3d0-a208ce6bdb85.png)
 
-### `npm start`
+Proyecto en React que contenga un grid y un selector de colores, cada que se le haga click a una cuadrado, este debe de cambiar su <br>
+background color seleccionado en el selector.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/85135244/147958071-2f1faf28-4f55-41d9-946b-76c7570b182e.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Preguntas
 
-### `npm test`
+### 1.-¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
+Las ceremonias de un Sprint son:
+	
+1)Sprint Planning: Tiene lugar al comienzo del Sprint. Se asegura que cada 
+miembro este preparado y que en cada sprint se hagan las cosas correctamente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2)Daily Scrum: Debe hacerse almenos una vez por día, no debe superar los 15 minutos.
+El equipo se reune a comunicar sobre el progreso de cada miembro.
 
-### `npm run build`
+3)Sprint Review: Es el momento donde se muestra el trabajo completado durante el Sprint
+a las partes interesadas, de modo que pueden ver como van las cosas y dedicarse a 
+inspeccionar o adaptar el producto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4)Sprint Retrospective: Consiste en obtener retroalimentacion rapida con el objetivo 
+de mejorar la cultura y desarrollo del producto. Se realiza al final de cada Sprint.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2.- ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
+Wireframe es un prototipo o boceto donde se representa visualmente de forma muy
+sencilla y genérica la estructura de una página web (idea), con el objetivo de definir
+el contenido y la posición que tendrá el proyecto. 
+Herramientas para realizar wireframes: Figma y AxureRP.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3.- Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
 
-### `npm run eject`
+* Var: no necesita ser inicializado, se puede redefinir y redeclarar y tiene un scope global. <br>
+* Let: no tiene que ser inciializado, se puede redefinir pero no redeclarar, y tiene un block scope.<br>
+* Const: Tiene que ser inicializado cuando se declara, no se puede redefinir ni declarar y tiene un block scope.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ej: En caso de querer utilizar una variable más alla del bloque donde fue declarada:
+```javascript
+{
+  var varDeclaracion = "soy var en Block Scoped";
+  console.log(varDeclaracion); // soy var en Block Scoped
+}
+console.log(varDeclaracion); // soy var en Block Scoped
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+{
+  let letDeclaracion = "soy let en Block scoped";
+  console.log(letDeclaracion); // soy let en Block scoped
+}
+console.log(letDeclaracion); // Uncaught ReferenceError: letDeclaracion is not defined
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+{
+  const constDeclaracion = "soy const en Block scoped";
+  console.log(constDeclaracion); // soy const en Block scoped
+}
+console.log(constDeclaracion); // Uncaught ReferenceError: constDeclaracion is not defined
+```
+Seria necesario utilizar var, puesto que su scope le permite ser usada fuera del bloque.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4.- ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
+Los tres comandos son:
+1) git branch rama-1 (crea la rama)
+2) git checkout rama-1 (entrar a la rama creada)
+3) git checkout -b rama-1 (crea y entra a la rama)
 
-## Learn More
+### 5.- Explicar la diferencia entre git merge y git rebase.
+* git-rebase: Genera una serie de commits secuencialmente, de modo que puedan aplicarse 
+                directamente sobre la cabeza del nodo. <br>
+* git-merge: Une dos o más historiales de desarrollo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6.- ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
+* Pull Request:Es una peticion que el propetario de un fork de un repositorio hace al  propietario 
+                 del repositorio original para que este último incorpore los commits que están en el fork. <br>
+* Git Pull:Se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al 
+             instante el repositorio local para reflejar ese contenido.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 7.- ¿Qué es el Virtual DOM?
+El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario 
+entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre 
+un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más 
+eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles.
 
-### Code Splitting
+### 8.- Dado el siguiente [codePen](https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100), el cual solo tiene un HTML, por medio de css llegar a esta respuesta. [Imagen](https://github.com/makeitrealcamp/assesment-1-programa-top/blob/main/assets/services-section.gif) (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
+<strong>Click [here](https://codepen.io/Dravernuss/pen/dyVRJpR) to see my solution.<strong>
+  
+```css
+CSS:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.c-section {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
 
-### Analyzing the Bundle Size
+.c-section__title{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Courier New;
+  line-height: 70px;
+  margin: -10px;
+  border-top: 10px solid grey;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+h3{
+    margin-left: 15%;
+    margin-top:30px;
+    font-style:bold;
+  }
 
-### Making a Progressive Web App
+.c-services{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 0px;
+  padding: 1px;
+  font-family:cursive;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+.c-services__item{
+  width:49.5%;
+  background-color:#E3E3E3;
+  margin-top: 20px;
+}
 
-### Advanced Configuration
+.c-services__item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+p{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+```

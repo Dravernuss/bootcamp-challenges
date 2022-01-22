@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 10px;
+}
+
+.card {
+  width: 150px;
+}
+
+.quote {
+  font-size: 15px;
+}

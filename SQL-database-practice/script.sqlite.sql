@@ -144,7 +144,7 @@ INSERT INTO Apuestas (apuestas_id,cantidad_apostada,marcador_apostado,resultado,
   '5',
   '300.00',
   '1-3',
-  'FALSEE',
+  'FALSE',
   '2',
   '3'
 );

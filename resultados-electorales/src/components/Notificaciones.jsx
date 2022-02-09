@@ -1,13 +1,15 @@
-import { Alert, Snackbar } from "@mui/material";
-import { useContext, useEffect, useState } from "react";
-import { NotificacionesContext } from "../utils/NotificacionesContext";
+import { Alert, Snackbar } from '@mui/material';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export const Notificaciones = () => {
-  const { notificacion } = useContext(NotificacionesContext);
+  const notificacion = useSelector(state => state.notificaciones);
+  const { mensaje, severity } = notificacion;
   const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
-    setIsOpen(!!notificacion);
-  }, [notificacion]);
+    setIsOpen(!!mensaje);
+  }, [mensaje, notificacion]);
 
   return (
     <Snackbar
@@ -17,8 +19,8 @@ export const Notificaciones = () => {
         setIsOpen(false);
       }}
     >
-      <Alert severity="success" sx={{ width: "100%" }}>
-        {notificacion}
+      <Alert severity={severity} sx={{ width: '100%' }}>
+        {mensaje}
       </Alert>
     </Snackbar>
   );

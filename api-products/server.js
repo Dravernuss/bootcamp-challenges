@@ -1,12 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-
+import { productRouter } from "./api/routes/index.js";
 import { productCtlr } from "./api/controllers/index.js";
 
 const { getAllProducts, getOneProduct, createProduct } = productCtlr;
-
-/**
- * Mongoose
+/* 
+  Mongoose
  */
 
 // Connect to db
@@ -19,8 +18,8 @@ mongoose.connection.on("error", function (e) {
   console.error("ERROR: ", e);
 });
 
-/**
- * Express
+/* 
+Express
  */
 const app = express();
 
@@ -32,13 +31,11 @@ app.get("/", (request, response) => {
   response.send("API PRODUCTS");
 });
 
-app.get("/api/products", getAllProducts);
+app.use("/api", productRouter);
 
-app.get("/api/products/:id", getOneProduct);
-
-app.post("/api/products/create", createProduct);
+const PORT = process.env.PORT || 5000;
 
 // Launch server
-app.listen(5000, () => {
-  console.log("Initialized server!!");
+app.listen(PORT, () => {
+  console.log("Iniatialized server!!");
 });

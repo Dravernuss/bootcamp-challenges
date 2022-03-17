@@ -1,7 +1,6 @@
 import { Product } from "../models/index.js";
 
 // Controller get all products
-
 export const getAllProducts = async (request, response) => {
   try {
     const products = await Product.find();

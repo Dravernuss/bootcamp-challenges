@@ -9,6 +9,8 @@ const schemaProducts = {
   price: Number,
   discount: Number,
   active: Boolean,
+  image: String,
+  image_id: String,
 };
 
 // Product model
